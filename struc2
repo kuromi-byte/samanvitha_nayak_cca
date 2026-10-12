@@ -1,0 +1,17 @@
+// Program to store and display book details
+#include <iostream>
+using namespace std;
+
+struct Book {
+    int id;
+    float price;
+};
+
+int main() {
+    Book b = {1, 250};
+
+    cout << "Book ID: " << b.id << endl;
+    cout << "Price: " << b.price;
+
+    return 0;
+}

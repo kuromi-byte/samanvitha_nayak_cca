@@ -1,0 +1,14 @@
+// Program to pass enum as a function argument
+#include <iostream>
+using namespace std;
+
+enum Size {Small, Medium, Large};
+
+void display(Size s) {
+    cout << s;
+}
+
+int main() {
+    display(Large);
+    return 0;
+}

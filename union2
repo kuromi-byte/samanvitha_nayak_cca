@@ -1,0 +1,15 @@
+// Program to read and display union data
+#include <iostream>
+using namespace std;
+
+union Number {
+    int x;
+    float y;
+};
+
+int main() {
+    Number n;
+    cin >> n.x;
+    cout << n.x;
+    return 0;
+}

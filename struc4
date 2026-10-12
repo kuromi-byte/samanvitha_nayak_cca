@@ -1,0 +1,19 @@
+// Program to pass a structure to a function
+#include <iostream>
+using namespace std;
+
+struct Rectangle {
+    int length;
+    int breadth;
+};
+
+void area(Rectangle r) {
+    cout << "Area: " << r.length * r.breadth;
+}
+
+int main() {
+    Rectangle r = {5, 4};
+    area(r);
+
+    return 0;
+}

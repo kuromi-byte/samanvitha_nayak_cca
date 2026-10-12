@@ -1,0 +1,17 @@
+// Program to use union inside a structure
+#include <iostream>
+using namespace std;
+
+struct Student {
+    int roll;
+    union Marks {
+        int theory;
+        int practical;
+    } m;
+};
+
+int main() {
+    Student s = {1, {90}};
+    cout << s.roll << " " << s.m.theory;
+    return 0;
+}

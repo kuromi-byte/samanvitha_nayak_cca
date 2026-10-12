@@ -1,0 +1,17 @@
+// Program to store and display student details
+#include <iostream>
+using namespace std;
+
+struct Student {
+    int usn;
+    float marks;
+};
+
+int main() {
+    Student s = {101, 85.5};
+
+    cout << "USN: " << s.usn << endl;
+    cout << "Marks: " << s.marks;
+
+    return 0;
+}

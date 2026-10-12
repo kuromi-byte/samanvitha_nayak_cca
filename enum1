@@ -1,0 +1,12 @@
+// Program to print enum values
+#include <iostream>
+using namespace std;
+
+enum Week {Mon = 1, Tue, Wed, Thu, Fri};
+
+int main() {
+    for (int i = Mon; i <= Fri; i++)
+        cout << i << " ";
+
+    return 0;
+}

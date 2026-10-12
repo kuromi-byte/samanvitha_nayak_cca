@@ -1,0 +1,17 @@
+// Program to store details of multiple students
+#include <iostream>
+using namespace std;
+
+struct Student {
+    int roll;
+    int marks;
+};
+
+int main() {
+    Student s[2] = {{1, 80}, {2, 90}};
+
+    for (int i = 0; i < 2; i++)
+        cout << s[i].roll << " " << s[i].marks << endl;
+
+    return 0;
+}
